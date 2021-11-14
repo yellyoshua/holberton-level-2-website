@@ -1,0 +1,135 @@
+#holberton-logo {
+  height: 50px;
+  width: 160px;
+}
+
+header div {
+  text-align: right;
+}
+
+.header-button {
+  background: #0d47a1;
+  padding: 5px 10px;
+  color: white;
+}
+
+.header-button:hover {
+  background: #012d70;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.body-main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+.body-main article {
+  flex: 2;
+  overflow-y: auto;
+}
+.body-main aside {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.body-title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+#tweets-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  #tweets-content {
+    justify-content: center !important;
+  }
+
+  #projects-list {
+    justify-content: center !important;
+  }
+
+  .github-container {
+    flex-direction: column !important;
+  }
+}
+
+#projects-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  flex: auto;
+}
+
+.projects-container {
+  padding: 10px;
+  max-width: 250px;
+  margin: 5px 10px;
+  border: 1px solid #a1a1a1;
+  border-radius: 5px;
+}
+
+.projects-container a {
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 500ms;
+}
+
+.projects-container a:hover {
+  text-decoration: none;
+}
+
+.projects-container p {
+  word-break: break-word;
+  text-align: justify;
+}
+
+.twitter-tweet {
+  max-width: 300px !important;
+  margin: 5px;
+}
+
+.github-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid #a1a1a1;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.github-avatar-container {
+  flex: 1;
+  text-align: center;
+}
+
+.github-statistics {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.github-statistics-card {
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.github-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
